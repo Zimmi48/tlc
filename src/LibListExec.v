@@ -57,7 +57,7 @@ Hint Rewrite is_nil_eq is_not_nil_eq : rew_list_exec.
 (* ** [length] *)
 
 Definition length : forall A, list A -> nat :=
-  List.length.
+  @List.length.
 
 Lemma length_eq :
   length = LibList.length.
